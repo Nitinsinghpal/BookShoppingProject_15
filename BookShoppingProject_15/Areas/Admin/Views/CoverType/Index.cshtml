@@ -1,0 +1,23 @@
+﻿@model IEnumerable<BookShoppingProject.Models.CoverType>
+<div class="row">
+    <div class="col-9">
+        <h2 class="text-primary">CoverType List</h2>
+    </div>
+    <div class="col-3">
+        <a class="btn btn-info" asp-action="Upsert"><i class="fas fa-plus"></i>&nbsp; New CoverType</a>
+    </div>
+</div>
+<div class="border p-2 m-3">
+    <table id="tblData" class="table table-hover table-active table-striped table-bordered" >
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+    </table>
+</div>
+@section scripts
+{
+    <script src="~/js/CoverType.js"></script>
+}
